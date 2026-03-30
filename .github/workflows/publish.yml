@@ -2,7 +2,8 @@ name: Build and Push Image
 
 on:
   push:
-    branches: ['release']
+    tags:
+      - "v*"
   workflow_dispatch:
 
 env:
